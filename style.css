@@ -1,0 +1,61 @@
+
+/* Custom color palette */
+:root {
+  --primary-dark: #272757;
+  --primary-light: #8686AC;
+  --secondary: #505081;
+  --accent: #0F0E47;
+}
+
+/* Custom styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+.social-card {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.social-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.title-gradient {
+  background: linear-gradient(120deg, var(--primary-dark) 0%, var(--secondary) 50%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.page-container {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom color classes */
+.bg-primary-dark { background-color: var(--primary-dark); }
+.bg-primary-light { background-color: var(--primary-light); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-accent { background-color: var(--accent); }
+
+.text-primary-dark { color: var(--primary-dark); }
+.text-primary-light { color: var(--primary-light); }
+.text-secondary { color: var(--secondary); }
+.text-accent { color: var(--accent); }

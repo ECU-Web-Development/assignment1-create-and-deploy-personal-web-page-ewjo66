@@ -1,0 +1,19 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio webpage for Elijah Ollman",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server",
+    "build": "echo 'No build needed for static site'",
+    "start": "npx http-server"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "personal-site"
+  ],
+  "author": "Elijah Ollman",
+  "license": "MIT",
+  "devDependencies": {}
+}
